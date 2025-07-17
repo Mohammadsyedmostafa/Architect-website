@@ -11,10 +11,6 @@ body{
     margin: 0;
 }
 /* shear style */
-img{
-    height: 100%;
-    width: 100%;
-}
 .display-flex {
     display: flex;
     align-items: center;
@@ -152,6 +148,24 @@ main > section{
     margin-bottom: 0px;
     margin-top: 0px;
 }
+.feature-image img{
+    width: 100%;
+}
+#experience-bage{
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #FF900E;
+    padding: 40px 42px;
+    margin-left: -30px;
+    margin-top: -100px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
 
 /* fact section */
 .fact-container{
@@ -214,6 +228,7 @@ main > section{
 @media screen and (max-width: 576px){
     .navbar,
     .nav-container,
+    .features,
     .team{
         flex-direction: column;
     }
@@ -233,10 +248,18 @@ main > section{
     main > section{
     margin-top: 50px;
 }
+    #experience-bage{
+        font-size: 1.25rem;
+        padding: 30px;
+    }
+    #experience-year{
+        font-size: 3rem;
+    }
 }
 /* responsive medium device */
 @media screen and (min-width:576px) and (max-width:992px){
-    .team{
+    .team,
+    .features{
         flex-direction: column;
     }
     .team-content{
@@ -247,7 +270,7 @@ main > section{
     }
     .sponspor-company, .fact-container{
         justify-items: center;
-        gap: 40px;
+        gap: 80px;
     }
     main > section{
     margin-top: 80px;
