@@ -11,6 +11,10 @@ body{
     margin: 0;
 }
 /* shear style */
+img{
+    height: 100%;
+    width: 100%;
+}
 .display-flex {
     display: flex;
     align-items: center;
@@ -103,7 +107,7 @@ main > section{
 .banner-img{
     width: 100%;
 }
-/* future */
+/* team section */
 .team-images{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -119,6 +123,34 @@ main > section{
 #first-text{
     font-weight: 500;
     color: #424242;
+}
+/* feature section */
+.features{
+    display: flex;
+    gap: 50px;
+}
+.features div{
+    flex:1;
+}
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    margin-top: 0px;
+}
+#feature-section-description{
+    margin-bottom: 0px;
+}
+.feature-card{
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.feature-card .feature-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 /* fact section */
@@ -193,16 +225,13 @@ main > section{
     .team-content{
         margin: 10px;
     }
-    .fact-container{
+    .fact-container,
+    .sponspor-company{
         justify-items: center;
-        gap: 20px;
+        gap: 30px;
     }
     main > section{
     margin-top: 50px;
-}
-.sponspor-company{
-    gap: 20px;
-    justify-items: center;
 }
 }
 /* responsive medium device */
@@ -213,4 +242,14 @@ main > section{
     .team-content{
         margin: 50px auto;
     }
+    .sponspor-company, .fact-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sponspor-company, .fact-container{
+        justify-items: center;
+        gap: 40px;
+    }
+    main > section{
+    margin-top: 80px;
+}
 }
